@@ -1,3 +1,6 @@
+If you get any errors please fix it yourself
+
+
 # Internship Diary Automation
 
 An automated diary entry system for internship tracking that generates diary content using Google's Gemini AI and submits it directly to the VTU (Visvesvaraya Technological University) internship portal.

@@ -1,6 +1,5 @@
 If you get any errors please fix it yourself
 
-
 # Internship Diary Automation
 
 An automated diary entry system for internship tracking that generates diary content using Google's Gemini AI and submits it directly to the VTU (Visvesvaraya Technological University) internship portal.
@@ -203,6 +202,24 @@ The current implementation is configured for:
 - **Morgan Stanley** (ID: 7117)
 
 To use a different internship, modify the internship selection in `vtu_portal.py`, line that sets `internship_value = '7117'`.
+
+## 🎛️ Customization
+
+### Customizing Skills and Hours Worked
+
+You can customize the default skills and hours worked for diary entries by editing `gemini.py`:
+
+- **Default Skill**: Currently set to `"Java"` (line 52)
+- **Default Hours Worked**: Currently set to `"8"` (line 53)
+
+Modify these values directly in the `generate_diary_entries()` function to match your internship requirements:
+
+```python
+"skills": "Java",           # Change to your preferred skill (e.g., "Python", "Java", "React")
+"hours_worked": "8"         # Change to your typical hours worked per day
+```
+
+These values are used as fallbacks when generating diary entries and can also be edited individually in the Streamlit UI before submission.
 
 ## 🐛 Troubleshooting
 
